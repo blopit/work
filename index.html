@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <button id="work" type="button" class="button">WORK</button>
+
+    <div class="health-box">
+        <div class="health-bar-red"></div>
+        <div class="health-bar-blue"></div>
+        <div class="health-bar"></div>
+        <div class="health-bar-text"></div>
+    </div>
+
+    <progress id="expbar" class="exp-bar" value="0" max="100">
+    </progress>
+
+        <p>
+            Clicks: <span id="total_clicks">0</span><br />
+            <i class="fas fa-heart"></i> <span id="hp">0</span><br />
+            <i class="fas fa-lightbulb"></i> <span id="exp">0</span><br />
+            <i class="fas fa-coins"></i> <span id="money">0</span><br />
+        </p>
+
+
+    <h3>Buy</h3>
+    <table class="table">
+        <tr>
+            <td>Autoclicker</td>
+            <td><span id="autoclicker_level">lvl 0</span></td>
+            <td><button id="buy_click" type="button" class="button">Buy for 1</button></td>
+        </tr>
+        <tr>
+            <td>Speed up by 10%</td>
+            <td><span id="speed_level">lvl 0</span></td>
+            <td><button id="upgrade_speed" type="button" class="button">Buy for 100</button></td>
+        </tr>
+        <tr>
+            <td>Increase Clicks Increment</td>
+            <td></td>
+            <td><button id="increase_clicks" type="button" class="button">Buy for 100</button></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
+
